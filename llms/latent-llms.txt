@@ -1,0 +1,48 @@
+# Latent (Latent Health)
+
+> Enterprise pharmacy intelligence platform for health systems, powered by a clinical agentic engine that reads the chart, reasons over payer policy and drug labels, and acts inside the EHR. Latent automates prior authorization, appeals, 340B eligibility, and patient medication access. Latent does NOT publish a public developer API, documentation, SDKs, or a sandbox — its integration surface is delivered EHR-natively (Epic, Cerner and others) under health-system contracts.
+
+## Company
+
+- [Latent Health](https://latenthealth.com): Company homepage.
+- [About](https://latenthealth.com/about): Mission, founders (Sriram Somasundaram, Rishabh Jain), and team.
+- [Platform](https://latenthealth.com/platform): The four platform modules — Identify, Access, Capture, Engage.
+- [Partners](https://latenthealth.com/partners): Partner ecosystem.
+- [Press](https://latenthealth.com/press): Press releases, including the $80M raise.
+- [Careers](https://latenthealth.com/careers): Open roles.
+- [Contact](https://latenthealth.com/contact): Sales and support contact.
+
+## Platform modules
+
+- Identify — care-gap identification, eligibility screening, site-of-care routing.
+- Access — prior authorization, clinical review, appeals generation, benefit routing, payer outreach.
+- Capture — 340B eligibility auditing, leakage analytics, financial dashboards.
+- Engage — patient outreach, queue management, outcomes analytics.
+
+## Content
+
+- [Blog](https://latenthealth.com/blog): Product, research, compliance, and company posts.
+- [Case studies](https://latenthealth.com/case-study/ochsner-case-study-2025): Health-system deployments (Ochsner, MetroHealth, St. Luke's, Yale New Haven).
+
+## Security and compliance
+
+- [Trust Center](https://security.latenthealth.com/): Vanta-hosted; HIPAA-compliant data handling and privacy by design.
+- [Terms of Service](https://latenthealth.com/terms-of-service)
+- [Privacy Policy](https://latenthealth.com/privacy-policy)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/apis.yml): APIs.json profile for Latent.
+- [conformance/latent-conformance.yml](https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/conformance/latent-conformance.yml): Published standards posture.
+- [security/latent-trust-center.yml](https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/security/latent-trust-center.yml): Trust center capture.
+- [security/latent-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/security/latent-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe.
+- [well-known/latent-well-known.yml](https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/well-known/latent-well-known.yml): /.well-known/ probe results (none published).
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/company/latent-health)
+
+## Notes for agents
+
+- There is no public Latent API, OpenAPI/AsyncAPI specification, MCP server, CLI, SDK, package, sandbox, status page, or changelog as of 2026-07-19. Do not infer endpoints.
+- Investors: Spark Capital, Transformation Capital, McKesson Ventures, Conviction, General Catalyst, Y Combinator ($80M raised).

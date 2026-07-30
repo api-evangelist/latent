@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://latenthealth.com/.well-known/
+host: https://latenthealth.com
+note: >-
+  No /.well-known/ discovery documents are published on the Latent Health web
+  host. Latent publishes no public developer API, so there is no separate API
+  host to probe (api.latenthealth.com resolves but returns 404 with an empty
+  body, and docs./developers. do not resolve). Absence is recorded here as
+  valid, expected data; no WellKnown or SecurityTxt pointer is wired into
+  apis.yml because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other_probes:
+- url: https://latenthealth.com/llms.txt
+  status: 404
+- url: https://api.latenthealth.com
+  status: 404
+- url: https://docs.latenthealth.com
+  status: 0
+  note: does not resolve
+- url: https://developers.latenthealth.com
+  status: 0
+  note: does not resolve
+- url: https://app.latenthealth.com
+  status: 404
+- url: https://status.latenthealth.com
+  status: 0
+  note: does not resolve
+- url: https://security.latenthealth.com
+  status: 200
+  note: Vanta-hosted trust center

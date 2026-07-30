@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://security.latenthealth.com/
+note: >-
+  Latent publishes no public API specification, so no spec-derived standards
+  conformance can be asserted. The entries below are limited to what Latent
+  actually publishes: a Vanta-hosted trust center stating HIPAA-compliant data
+  handling and privacy-by-design for protected health information. Standards
+  with no published evidence are recorded as unknown rather than false.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: >-
+    Trust center at security.latenthealth.com states HIPAA-compliant data
+    handling and privacy-by-design for a platform processing PHI from health
+    system EHRs.
+  source: https://security.latenthealth.com/
+- id: soc2
+  conforms: unknown
+  evidence: >-
+    Trust center is Vanta-hosted (Vanta commonly backs SOC 2 programs) but no
+    SOC 2 report or attestation is named in the publicly rendered trust-center
+    content. Not asserted without published evidence.
+- id: iso-27001
+  conforms: unknown
+  evidence: not named on any public Latent page
+- id: hitrust
+  conforms: unknown
+  evidence: not named on any public Latent page
+- id: oauth2
+  conforms: unknown
+  evidence: no public API or securityScheme surface to derive from
+- id: fhir-r4
+  conforms: unknown
+  evidence: >-
+    Platform is described as chart-native and EHR agnostic across Epic and
+    Cerner, but no FHIR or HL7 conformance claim is published.
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public API specification
