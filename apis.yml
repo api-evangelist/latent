@@ -1,21 +1,52 @@
 aid: latent
 name: Latent
-description: 'Latent is a company surfaced as a portfolio company of spark-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Latent (Latent Health) is an enterprise pharmacy intelligence platform for health systems,
+  built around a clinical agentic engine that reads the chart, reasons over payer policy and drug labels,
+  and acts inside the electronic health record. The platform spans four modules — Identify (care-gap
+  identification, eligibility screening, site-of-care routing), Access (prior authorization, clinical
+  review, appeals generation, benefit routing, payer outreach), Capture (340B eligibility auditing,
+  leakage analytics, financial dashboards), and Engage (patient outreach, queue management, outcomes
+  analytics). Latent is chart-native and EHR agnostic, integrating with Epic, Cerner and others, and is
+  used by more than 45 health systems including Ochsner Health, MetroHealth, Yale New Haven Health, St.
+  Luke''s Health System and Henry Ford Health, serving over two million patients annually. Founded by
+  Sriram Somasundaram and Rishabh Jain, the company has raised $80M from Spark Capital, Transformation
+  Capital, McKesson Ventures, Conviction, General Catalyst and Y Combinator. Latent publishes no public
+  developer API, documentation, or SDKs; its integration surface is delivered through EHR-native
+  deployment with health-system customers, and its security posture is published on a Vanta-hosted trust
+  center with HIPAA-compliant data handling.'
 url: https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68114bc2c53c94882188a30e/68114bc2c53c94882188a355_Logo.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - spark-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Health Systems
+- Pharmacy
+- Prior Authorization
+- Medication Access
+- Clinical AI
+- 340B
+- EHR Integration
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,38 @@ maintainers:
 common:
 - type: Website
   url: https://latenthealth.com
+- type: About
+  url: https://latenthealth.com/about
+- type: Platform
+  url: https://latenthealth.com/platform
+- type: Blog
+  url: https://latenthealth.com/blog
+- type: Press
+  url: https://latenthealth.com/press
+- type: Partners
+  url: https://latenthealth.com/partners
+- type: Careers
+  url: https://latenthealth.com/careers
+- type: Support
+  url: https://latenthealth.com/contact
+- type: TermsOfService
+  url: https://latenthealth.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://latenthealth.com/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/latent-health
+- type: TrustCenter
+  url: security/latent-trust-center.yml
+- type: Compliance
+  url: https://security.latenthealth.com/
+- type: DomainSecurity
+  url: security/latent-domain-security.yml
+- type: Conformance
+  url: conformance/latent-conformance.yml
+- type: LLMsTxt
+  url: llms/latent-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
