@@ -15,6 +15,17 @@ description: 'Latent (Latent Health) is an enterprise pharmacy intelligence plat
   deployment with health-system customers, and its security posture is published on a Vanta-hosted trust
   center with HIPAA-compliant data handling.'
 url: https://raw.githubusercontent.com/api-evangelist/latent/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
