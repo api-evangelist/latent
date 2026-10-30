@@ -64,26 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Latent (Latent Health) is an enterprise pharmacy intelligence platform for health systems, powered by a clinical agentic engine that reads the chart, reasons over payer policy and drug labels, and acts inside the EHR. The platform spans four modules — **Identify** (care-gap identification, eligibility screening, site-of-care routing), **Access** (prior authorization, clinical review, appeals generation, benefit routing, payer outreach), **Capture** (340B eligibility auditing, leakage analytics, financial dashboards), and **Engage** (patient outreach, queue management, outcomes analytics).
+Latent (Latent Health) is an enterprise pharmacy intelligence platform for health systems, built around a clinical agentic engine that reads the chart, reasons over payer policy and drug labels, and acts inside the electronic health record. The platform spans four modules — Identify (care-gap identification, eligibility screening, site-of-care routing), Access (prior authorization, clinical review, appeals generation, benefit routing, payer outreach), Capture (340B eligibility auditing, leakage analytics, financial dashboards), and Engage (patient outreach, queue management, outcomes analytics). Latent is chart-native and EHR agnostic, integrating with Epic, Cerner and others, and is used by more than 45 health systems including Ochsner Health, MetroHealth, Yale New Haven Health, St. Luke's Health System and Henry Ford Health, serving over two million patients annually. Founded by Sriram Somasundaram and Rishabh Jain, the company has raised $80M from Spark Capital, Transformation Capital, McKesson Ventures, Conviction, General Catalyst and Y Combinator. Latent publishes no public developer API, documentation, or SDKs; its integration surface is delivered through EHR-native deployment with health-system customers, and its security posture is published on a Vanta-hosted trust center with HIPAA-compliant data handling.
 
-Latent is chart-native and EHR agnostic (Epic, Cerner and others), used by 45+ health systems including Ochsner Health, MetroHealth, Yale New Haven Health, St. Luke's Health System and Henry Ford Health, serving more than two million patients annually. Founded by Sriram Somasundaram and Rishabh Jain; $80M raised from Spark Capital, Transformation Capital, McKesson Ventures, Conviction, General Catalyst and Y Combinator.
+**Areas:** Company · Healthcare · Health Systems · Pharmacy · Prior Authorization · Medication Access · Clinical AI · 340B · EHR Integration · Artificial Intelligence
 
-- Website — https://latenthealth.com
-- Platform — https://latenthealth.com/platform
-- Trust Center — https://security.latenthealth.com
+## Latent on APIs.io
 
-## API surface
+Everything profiled for Latent is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/latent/](https://apis.io/providers/latent/)** — or go straight to one of the APIs or properties below.
 
-**Latent publishes no public developer API.** As of 2026-07-19 there is no developer portal, API reference, OpenAPI/AsyncAPI specification, SDK or package, MCP server, CLI, sandbox, status page, or public changelog. No `/.well-known/` discovery documents are served. Integration is delivered EHR-natively under health-system contracts.
+### Published properties
 
-Artifacts in this repo reflect what Latent genuinely publishes:
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | Method |
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Latent Domain Security](https://apis.io/security/latent/latent-domain-security/)
+- [Latent Trust Center](https://apis.io/security/latent/latent-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://latenthealth.com)
+- [Support](https://latenthealth.com/contact)
+- [Blog](https://latenthealth.com/blog)
+- [Compliance](https://security.latenthealth.com/)
+- [Terms of service](https://latenthealth.com/terms-of-service)
+- [Privacy policy](https://latenthealth.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 17.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `security/latent-domain-security.yml` | probed (TLS 1.3, HSTS, DNSSEC, CAA, SPF, DMARC quarantine) |
-| `security/latent-trust-center.yml` | searched (Vanta-hosted, HIPAA) |
-| `conformance/latent-conformance.yml` | searched (HIPAA published; SOC 2/ISO/HITRUST unknown) |
-| `well-known/latent-well-known.yml` | searched (all 404 — recorded as valid absence) |
-| `llms/latent-llms.txt` | generated |
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 36.8 |
 
-Backed by: spark-capital
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/latent/](https://apis.io/providers/latent/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Latent: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/latent/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
